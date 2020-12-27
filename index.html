@@ -4,22 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Site | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css">-->
+<style>
+@font-face {
+    font-family: myfont;
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+.a:hover{
+    font-weight: bold;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+    background-color: #d50000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: myfont;
+    /*background-color: black;
+    color: rgb(255, 255, 255);*/
+}
+.clips_1 {
+    background-color: #b2dfdb ;
+
+}
+.clips_2, .download_button {
+    background-color: #26a69a  ;
+
+}
+/*-----------------Nav-----------------*/
+.nav_list{
+    background-color: #ff5252;
+    text-align: center;
+}
+.nav_list li{
+    display: inline-block;
+}
+.nav_list a{
+    text-decoration: none;
+    color: #ffffff ;
+    display: block;
+    width: 10vw;
+    padding: 3vh;
+    font-size: large;
+}
+/*---------------FOOTER----------------------------------------*/
+.footer_list{
+    background-color: #455a64 ;
+    text-align: center;
+}
+.footer_list li{
+    display: inline-block;
+}
+.footer_list a{
+    text-decoration: none;
+    color: white;
+    display:block;
+    width:161px;
+    height: 20px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+.footer_list a:hover{
+    background-color: #263238 ;
+}
+
+
+</style>   
 </head>
 <body>
     <header>
         <h1>Test Site</h1>
     </header>
     <nav>
-        <a href="https://media.istockphoto.com/vectors/home-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1145840259?b=1&k=6&m=1145840259&s=612x612&w=0&h=6awaY-DYc1yj39PH6siqDZxEMarJCaOpbIBY06414Tk=">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Store</a>
-        <a href="#">Merch</a>
-        <a href="#">Login/SignUp</a>
+        <ul class="nav_list">
+            <li><a href class="a "="https://media.istockphoto.com/vectors/home-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1145840259?b=1&k=6&m=1145840259&s=612x612&w=0&h=6awaY-DYc1yj39PH6siqDZxEMarJCaOpbIBY06414Tk=">Home</a></li>
+            <li><a href class="a" ="#">Courses</a></li>
+            <li><a target="_blank" class="a" href="https://www.google.com">Store</a></li>
+            <li><a class="a" href="#">Merch</a></li>
+            <li><a class="a" href="#">Login/SignUp</a></li>
+        </ul>
     </nav>
     <main>
-        <section>
-            <h2>Clips</h2>
+        <section class="clips_1">
+            <h2 class="white">Clips</h2>
             <video src="media/Coffee - 45358.mp4" poster="media\img\photo.jpg" width="32%" controls></video>
             <video src="media/Nature - 31377.mp4" width="32%" controls></video>
             <video src="media/Street - 19627.mp4" width="32%" controls></video>
@@ -28,23 +95,25 @@
             <video src="media/Street - 19627.mp4" width="32%" controls></video>
             <video src="media/Coffee - 45358.mp4" poster="media\img\photo.jpg" width="32%" controls></video>
         </section>
-        <section>
-            <h2>Clip 2</h2>
+        <section class="clips_2">
+            <h2 class="white">Clips 2</h2>
             <iframe width="33%" height="100%" src="https://www.youtube.com/embed/JQVmkDUkZT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="33%" height="100%" src="https://www.youtube.com/embed/Fl4Djf5Vr0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="33%" height="100%" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <section>
-            <h3>PDFs</h3>
-            <a target="_blank" href="docs/sample.pdf"><img src="media/img/g896.png" alt="" width="33%" height="60%"></a>
+        <section class="download_button">
+            <h3 class="red">PDFs</h3>
+            <a target="_blank" class="b" href="docs/sample.pdf"><img src="media/img/g896.png" alt="" width="33%" height="60%"></a>
         </section>
     </main>
     <footer>
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">&copy 2020 | Test Site</a>
+        <ul class="footer_list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">&copy 2020 | Test Site</a></li>
+        </ul>
     </footer>
     
 </body>
