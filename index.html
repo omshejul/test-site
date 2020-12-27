@@ -25,12 +25,12 @@
 }
 .clips_1 {
     background-color: #b2dfdb ;
-    padding: 3%;
+    padding: 57.6px;
 
 }
 .clips_2, .download_button {
     background-color: #26a69a ;
-    padding: 3%;
+    padding: 57.6px;
 
 }
 .b img{
@@ -40,11 +40,23 @@
     width: 40%;
 }
 .vid{
-    height: fit-content(108px);
-    width: fit-content(192px);
+    height: 196px;
+    width:  350px;
+    display: inline-block;
+    margin: auto;
+}
+.vid_div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1059px;
+    height: 196px;
+    border: 24px solid #1c7c73;
 
 
 }
+    
+
 /*-----------------Nav-----------------*/
 .nav_list{
     background-color: #ff5252;
@@ -128,9 +140,11 @@ header{
         <section class="clips_2">
             <h2 class="white">Clips 2</h2>
             <p>&nbsp;</p>
-            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/JQVmkDUkZT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/Fl4Djf5Vr0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid_div">
+                <iframe class="vid" src="https://www.youtube.com/embed/JQVmkDUkZT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/Fl4Djf5Vr0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
         <section class="download_button">
             <h3 class="red white">PDFs</h3>
