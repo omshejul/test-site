@@ -25,10 +25,24 @@
 }
 .clips_1 {
     background-color: #b2dfdb ;
+    padding: 3%;
 
 }
 .clips_2, .download_button {
-    background-color: #26a69a  ;
+    background-color: #26a69a ;
+    padding: 3%;
+
+}
+.b img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.vid{
+    height: fit-content(108px);
+    width: fit-content(192px);
+
 
 }
 /*-----------------Nav-----------------*/
@@ -67,7 +81,21 @@
 .footer_list a:hover{
     background-color: #263238 ;
 }
-
+/*------------------------H2 Clips------------------------*/
+.white{
+    background-color: rgba(65, 65, 65, 0);
+    padding: 12px;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+/*------------------------HEADER------------------------*/
+header{
+    background-color: #991f00;
+    padding: 36px;
+    color: white;
+    text-align: center;
+}
 
 
 </style>   
@@ -78,7 +106,7 @@
     </header>
     <nav>
         <ul class="nav_list">
-            <li><a href class="a "="https://media.istockphoto.com/vectors/home-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1145840259?b=1&k=6&m=1145840259&s=612x612&w=0&h=6awaY-DYc1yj39PH6siqDZxEMarJCaOpbIBY06414Tk=">Home</a></li>
+            <li><a class="a" href ="https://media.istockphoto.com/vectors/home-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1145840259?b=1&k=6&m=1145840259&s=612x612&w=0&h=6awaY-DYc1yj39PH6siqDZxEMarJCaOpbIBY06414Tk=" target="_blank">Home</a></li>
             <li><a class="a" href="test1.html" target="_blank">Test 1</a></li>
             <li><a class="a" href="test2.html" target="_blank">Test 2</a></li>
             <li><a target="_blank" class="a" href="https://www.google.com">Store</a></li>
@@ -88,6 +116,7 @@
     <main>
         <section class="clips_1">
             <h2 class="white">Clips</h2>
+            <p>&nbsp;</p>
             <video src="media/vid/Coffee - 45358.mp4" poster="media\img\photo.jpg" width="32%" controls></video>
             <video src="media/vid/Nature - 31377.mp4" width="32%" controls></video>
             <video src="media/vid/Street - 19627.mp4" width="32%" controls></video>
@@ -98,12 +127,14 @@
         </section>
         <section class="clips_2">
             <h2 class="white">Clips 2</h2>
-            <iframe width="33%" height="100%" src="https://www.youtube.com/embed/JQVmkDUkZT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="33%" height="100%" src="https://www.youtube.com/embed/Fl4Djf5Vr0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="33%" height="100%" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>&nbsp;</p>
+            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/JQVmkDUkZT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/Fl4Djf5Vr0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vid" width="33%" height="100%" src="https://www.youtube.com/embed/va3JHUlMZHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section class="download_button">
-            <h3 class="red">PDFs</h3>
+            <h3 class="red white">PDFs</h3>
+            <p>&nbsp;</p>
             <a target="_blank" class="b" href="docs/sample.pdf"><img src="media/img/g896.png" alt="" width="33%" height="60%"></a>
         </section>
     </main>
